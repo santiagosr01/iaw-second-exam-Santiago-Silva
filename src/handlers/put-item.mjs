@@ -33,7 +33,7 @@ export const putItemHandler = async (event) => {
     // https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB/DocumentClient.html#put-property
     var params = {
         TableName : tableName,
-        Item: { id : id, name: name }
+        Item: { id : id, disponible: disponible, anoPublicacion : anoPublicacion, autor : autor, editorial : editorial, nombreLibro : nombreLibro }
     };
 
     try {
